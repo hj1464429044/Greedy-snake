@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        ul {
+            width: 180px;
+            height: 180px;
+            position: absolute;
+            left: 1100px;
+            top: 500px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        li {
+            text-align: center;
+            line-height: 60px;
+            font-size: 40px;
+        }
+        .up:hover{
+            cursor: pointer;
+        }
+        .down:hover{
+            cursor: pointer;
+        }
+        .left:hover{
+            cursor: pointer;
+        }
+        .right:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="button" value="动起来">
+    <ul>
+        <li></li>
+        <li class="up">▲</li>
+        <li></li>
+        <li class="left">◀</li>
+        <li class="center">●</li>
+        <li class="right">▶</li>
+        <li></li>
+        <li class="down">▼</li>
+        <li></li>
+    </ul>
+    <script src="js/tools.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/food.js"></script>
+    <script src="js/snake.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        /* new Map()
+        new Food()
+        new Snake() */
+        new Main()
+    </script>
+</body>
+
+</html>
